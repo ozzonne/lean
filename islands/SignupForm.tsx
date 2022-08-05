@@ -13,8 +13,11 @@ export default function SignupForm() {
     console.log("Submitted");
     console.log("State", state);
   }
-  function handleChange(e: any) {
+  function handleChange(e: { target: any }) {
     setState((ps) => ({ ...ps, [e.target.name]: e.target.value }));
+  }
+  function handleSignUp() {
+    // const signUp = supa
   }
   return (
     <div class={tw`bg-blue`}>
